@@ -52,7 +52,7 @@ int dynarray_length(struct dynarray* da) {
  * Auxilliary function to perform a resize on the underlying array.
  */
 void _dynarray_resize(struct dynarray* da, int new_capacity) {
-  assert(new_capacity > da->length);
+  assert(new_capacity > da->length); 
 
   /*
    * Allocate space for the new array.
